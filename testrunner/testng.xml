@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AllTestsSuite">
+
+  <!-- Sign Functionality Test -->
+  <test name="SignFunctionalityTest">
+    <classes>
+      <class name="dataDriven.SignInTestUsingDataProviderDataDriventesting"/>
+      <class name="dataDriven.SignInTestUsingExcelDataDriventesting"/>
+    </classes>
+  </test> <!-- SignFunctionalityTest -->
+
+  <!-- Login To Dispatch Test -->
+  <test name="LoginToDispatchTest">
+    <classes>
+      <class name="testScenario.LoginPage"/>
+    </classes>
+  </test> <!-- LoginToDispatchTest -->
+
+  <!-- Cart Test -->
+  <test name="CartTest">
+    <classes>
+      <class name="testScenario.CartAllFunctionalityTest"/>
+    </classes>
+  </test> <!-- CartTest -->
+
+  <!-- WishList Test -->
+  <test name="WishListTest">
+    <classes>
+      <class name="testScenario.WishListReviewFunctionality"/>
+    </classes>
+  </test> <!-- WishListTest -->
+
+  <!-- Shopping Options Test -->
+  <test name="ShoppingOptionsTest">
+    <classes>
+      <class name="testScenario.GearBagsPriceSectionFunctionality"/>
+      <class name="testScenario.GearBagsStyleSectionFunctionality"/>
+      <class name="testScenario.GearFitnessEquipmentPriceSectionFunctionality"/>
+      <class name="testScenario.GearFitnessEquipmentCategorySizeSectionFunctionality"/>
+      <class name="testScenario.GearWatchesCategorySectionFunctionality"/>
+      <class name="testScenario.ShoppingOptionFunctionality"/>
+    </classes>
+  </test> <!-- ShoppingOptionsTest -->
+
+  <!-- New Account and Sign Out Test -->
+  <test name="NewAccountSignOutTest">
+    <classes>
+      <class name="testScenario.NewAccountCreate"/>
+      <class name="testScenario.SignOutFunction"/>
+    </classes>
+  </test> <!-- NewAccountSignOutTest -->
+
+</suite> <!-- AllTestsSuite -->
