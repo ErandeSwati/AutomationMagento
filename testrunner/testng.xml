@@ -2,13 +2,19 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="AllTestsSuite">
 
-  <!-- Sign Functionality Test -->
-  <test name="SignFunctionalityTest">
+  <!-- Sign In Functionality Using DataProvider Test -->
+  <test name="SignFunctionalityTestUsingDataProviderDataDrivenTesting">
     <classes>
-      <class name="dataDriven.SignInTestUsingDataProviderDataDriventesting"/>
       <class name="dataDriven.SignInTestUsingExcelDataDriventesting"/>
     </classes>
-  </test> <!-- SignFunctionalityTest -->
+  </test> <!-- SignFunctionalityTestUsingDataProviderDataDrivenTesting -->
+  
+  <!-- Sign In Functionality Using Excel DataDriven Test -->
+  <test name="SignFunctionalityTestUsingExcelDataDrivenTesting">
+    <classes>
+      <class name="dataDriven.SignInTestUsingExcelDataDriventesting"/>
+    </classes>
+  </test> <!-- SignFunctionalityTestUsingExcelDataDrivenTesting -->
 
   <!-- Login To Dispatch Test -->
   <test name="LoginToDispatchTest">
@@ -43,12 +49,18 @@
     </classes>
   </test> <!-- ShoppingOptionsTest -->
 
-  <!-- New Account and Sign Out Test -->
-  <test name="NewAccountSignOutTest">
+  <!-- New Account Test -->
+  <test name="NewAccountTest">
     <classes>
       <class name="testScenario.NewAccountCreate"/>
+    </classes>
+  </test> <!-- NewAccountTest -->
+  
+  <!-- Sign Out Test -->
+  <test name="SignOutTest">
+    <classes>
       <class name="testScenario.SignOutFunction"/>
     </classes>
-  </test> <!-- NewAccountSignOutTest -->
+  </test> <!-- SignOutTest -->
 
 </suite> <!-- AllTestsSuite -->

@@ -45,7 +45,7 @@ public class NewAccountCreate {
 	        // Fill up Create Account details
 	        objCreateAcc.setFirstName("Swati");
 	        objCreateAcc.setLastName("Eran");
-	        objCreateAcc.setEmailAddress("swatii.erande1234@gmail.com");
+	        objCreateAcc.setEmailAddress("swatii.erande11234@gmail.com");
 	        objCreateAcc.setPassword("swati#1234");
 	        objCreateAcc.setConfirmationPassword("swati#1234");
 	        objCreateAcc.clickSubmitCreateAccountButton();
